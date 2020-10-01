@@ -26,6 +26,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.headers().addHeaderWriter(svgHeaderWriter());
 		
 		http.headers().addHeaderWriter(serverEsigDSS());
+		http.headers().frameOptions().disable();
 		
 	}
 
